@@ -1,0 +1,11 @@
+@media (max-width:400px) {
+    iframe{
+        height: 200px;
+    }
+    .showVideo{
+        width: 90%;
+    }
+    section>p{
+        text-align: justify !important;
+    }
+}
