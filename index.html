@@ -34,7 +34,7 @@
         <blogs-section :blogs="profile.blogs" :utilities="utilities"></blogs-section>
     </main>
     <footer-section :services="profile.services" :links="profile.links" :utilities="utilities" :contact="profile.contact"></footer-section>
-    <section v-if="showVideo" class="overflow-x-hidden w-100 h-100 bg-glass position-fixed z-2 top-0 start-0 d-flex justify-content-center align-items-center">
+    <section v-if="showVideo" class="overflow-x-hidden w-100 h-100 bg-glass position-fixed z-3 top-0 start-0 d-flex justify-content-center align-items-center">
         <div class="showVideo">
             <figure class="ratio ratio-16x9 shadow">
                 <video src="./assets/img/video1.mp4" class="rounded" autoplay controls></video>
@@ -42,9 +42,9 @@
             <button @click="showVideo = !showVideo" class="btn btn-sm btn-secondary">skip video</button>
         </div>
     </section>
-    <!-- <section v-if="spinner" class="w-100 h-100 z-3 position-fixed top-0 start-0 bg-glass d-flex justify-content-center align-items-center">
+    <section v-if="blogSpinner" class="w-100 h-100 z-2 position-fixed top-0 start-0 bg-glass d-flex justify-content-center align-items-center">
         <span class="spinner spinner-grow"></span>
-    </section> -->
+    </section>
 
 
       
