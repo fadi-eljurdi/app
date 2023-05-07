@@ -11,7 +11,7 @@ export default {
         </div>
         
         <div class="row justify-content-start g-3 my-3">
-            <section class="col-12 col-md-6 col-lg-3" v-for="b in blogs" :key="b">
+            <section class="col-12 col-md-6 col-lg-3" v-for="b in lazyBlogs" :key="b">
                 <div class="p-3 shadow-sm bg-light rounded d-flex flex-column gap-1 pop">
                     <div class="ratio ratio-16x9"> 
                         <img :src="b.thumbnail" :alt="b.title" class="img-fluid object-fit-cover rounded-top skeleton">
@@ -31,6 +31,12 @@ export default {
         </div>
     </section>
     `,
+    computed:{
+        lazyBlogs(){
+            if(location.href.includes('/blogs')) return this.blogs
+            else return this.blogs.slice(-8)
+        }
+    },
     props:['blogs','utilities'],
     mounted(){
         if(location.href.includes('/blogs')){
