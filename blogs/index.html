@@ -20,11 +20,11 @@
 
 </head>
   <body id="app" class="bg-blight overflow-x-hidden">
-    <header-section  :utilities="utilities" :pic="pic" ></header-section>
+    <header-section  :utilities="utilities" :logo="logo" :contact="contact" ></header-section>
     <main class="pb-5" style="margin-top: 100px;">
-        <blogs-section :blogs="profile.blogs" :utilities="utilities"></blogs-section>
+        <blogs-section :blogs="blogs" :utilities="utilities"></blogs-section>
     </main>
-    <footer-section :services="profile.services" :links="profile.links" :utilities="utilities" :contact="profile.contact"></footer-section>
+    <footer-section :services="services" :links="links" :utilities="utilities" :contact="contact"></footer-section>
     
     <section v-if="blogSpinner" class="w-100 h-100 z-2 position-fixed top-0 start-0 bg-glass d-flex justify-content-center align-items-center">
         <span class="spinner spinner-grow"></span>

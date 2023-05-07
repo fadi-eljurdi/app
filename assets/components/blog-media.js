@@ -12,7 +12,9 @@ export default {
                         <iframe class="img-fluid object-fit-cover rounded" :src="'https://www.youtube.com/embed/'+m.src" :title="m.alt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </section>
                     <section v-if="m.type == 'image'">
-                        <img :src="m.src" :alt="m.alt" class="img-fluid rounded">
+                        <div class="ratio ratio-16x9">
+                            <img :src="m.src" :alt="m.alt" class="img-fluid rounded object-fit-cover">
+                        </div>
                     </section>
 
                 </div>
