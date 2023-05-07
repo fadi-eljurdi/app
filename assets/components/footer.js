@@ -27,10 +27,6 @@ export default {
                                 <i class="fs-5 bi bi-geo-alt-fill text-secondary"></i>
                                 <span>{{contact.address}}</span>
                             </span>
-                            <span class="text-secondary d-flex gap-3 align-items-center">
-                                <i class="fs-5 bi bi-clock text-secondary"></i>
-                                <span>{{contact.openHours}}</span>
-                            </span>
                         </div>
                     </div>
                 </section>

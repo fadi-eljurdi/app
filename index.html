@@ -20,20 +20,19 @@
 
 </head>
   <body id="app" class="bg-blight overflow-x-hidden">
-    <header-section  :utilities="utilities" :pic="pic" ></header-section>
-
-    <hero-section :links="profile.links" :utilities="utilities"></hero-section>
+    <header-section  :utilities="utilities" :logo="logo" :contact="contact" ></header-section>
+    <hero-section :links="links" :utilities="utilities"></hero-section>
     <hr class="container my-5">
     <main class="pb-5">
-        <services-section :services="profile.services" :utilities="utilities"></services-section>        
+        <services-section :services="services" :utilities="utilities"></services-section>        
         <hr class="container my-5">
-        <blogs-section :blogs="profile.blogs" :utilities="utilities"></blogs-section>
+        <blogs-section :blogs="blogs" :utilities="utilities"></blogs-section>
     </main>
-    <footer-section :services="profile.services" :links="profile.links" :utilities="utilities" :contact="profile.contact"></footer-section>
+    <footer-section :services="services" :links="links" :utilities="utilities" :contact="contact"></footer-section>
     <section v-if="showVideo" class="overflow-x-hidden w-100 h-100 bg-glass position-fixed z-3 top-0 start-0 d-flex justify-content-center align-items-center">
         <div class="showVideo">
             <figure class="ratio ratio-16x9 shadow">
-                <video src="./assets/img/video1.mp4" class="rounded" autoplay controls></video>
+                <video src="./assets/img/video1.mp4" class="rounded" autoplayy controls></video>
             </figure>
             <button @click="showVideo = !showVideo" class="btn btn-sm btn-secondary">skip video</button>
         </div>

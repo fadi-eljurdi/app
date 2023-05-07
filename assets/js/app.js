@@ -14,11 +14,14 @@ import blogMedia from '../components/blog-media.js'
 const app = Vue.createApp({
     data() {
         return {
-            api: 'https://script.google.com/macros/s/AKfycbwEG2OfI9Sp-RjIsuu7PTDtA7uCPzzxfopwSgHEjUph3gV9PT33c_xnRX__jxu7FfhX/exec',
-            pic: 'https://drive.google.com/uc?id=16vVKvWJ5Lg9jTwWvH-iqnriHmVESqIW7',
+            api: 'https://script.google.com/macros/s/AKfycbySFFxizEu2oXeOioaV105PLv1itLl5EZhGf-jbmyMPJXeiQhtllo5Mvge24wgfNGYR/exec',
+            logo:'',
+            contact:'',
+            services:'',
+            blogs:'',
             utilities,
-            profile: '',
-            // spinner: false,
+            profile:'',
+            links:'',
             blogSpinner:true,
             showVideo:true,
             translated:false
@@ -35,6 +38,11 @@ const app = Vue.createApp({
                 res = await res.json()
                 // console.log(res)
                 this.profile = res
+                this.logo=res.contact.logo
+                this.contact = res.contact
+                this.blogs = res.blogs
+                this.services = res.services
+                this.links = res.links
                 this.blogSpinner = false
             } catch (err) {
                 console.log(err)
