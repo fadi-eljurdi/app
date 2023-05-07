@@ -10,7 +10,7 @@ export default {
             <small class="pop text-secondary">Our blog is dedicated to providing thoughtful and informative articles that are designed to help you expand your knowledge and understanding of a wide range of topics.</small>
         </div>
         
-        <div class="row justify-content-center g-3 my-3">
+        <div class="row justify-content-start g-3 my-3">
             <section class="col-12 col-md-6 col-lg-3" v-for="b in blogs" :key="b">
                 <div class="p-3 shadow-sm bg-light rounded d-flex flex-column gap-1 pop">
                     <div class="ratio ratio-16x9"> 

@@ -7,7 +7,7 @@ export default {
             <h2 class="fs-3 cin text">Empowering Your Media Production with Our Tailored Solutions</h2>
             <small class="pop text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quas enim officia harum, maxime eaque.</small>
         </div>
-        <div class="row justify-content-center g-3 my-3">
+        <div class="row justify-content-start g-3 my-3">
             <section class="col-12 col-lg-4" v-for="s in services" :key="s">
                 <div class="p-3 shadow-sm bg-light rounded d-flex flex-column gap-2 pop" data-bs-toggle="modal" :data-bs-target="'#'+s.id">
                     <div class="ratio ratio-16x9"><img :src="s.thumbnail" :alt="s.title" class="object-fit-cover skeleton img-fluid rounded-top"></div>
