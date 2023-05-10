@@ -34,7 +34,7 @@ export default {
                     <div class="d-flex flex-column gap-1">
                         
                         <h2 class="fs-4 text-light opacity-75 m-0">Our Services</h2>
-                        <p class="fs-smaller text-light opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, veritatis.</p>
+                        <p class="fs-smaller text-light opacity-50">Exceptional services that meet and exceed your expectations.</p>
                         <div class="d-flex flex-column gap-2">
                             <a 
                                 v-for="s in services" :key="s"
@@ -50,7 +50,7 @@ export default {
                     <div class="d-flex flex-column gap-1">
                         
                         <h2 class="fs-4 text-light opacity-75 m-0">Useful links</h2>
-                        <p class="fs-smaller text-light opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, veritatis.</p>
+                        <p class="fs-smaller text-light opacity-50">Connecting you to the resources you need.</p>
                         <div class="d-flex flex-column gap-2">
                             <a 
                                 v-for="l in links" :key="l"

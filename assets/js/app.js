@@ -14,7 +14,7 @@ import blogMedia from '../components/blog-media.js'
 const app = Vue.createApp({
     data() {
         return {
-            api: 'https://script.google.com/macros/s/AKfycbySFFxizEu2oXeOioaV105PLv1itLl5EZhGf-jbmyMPJXeiQhtllo5Mvge24wgfNGYR/exec',
+            api: 'https://script.google.com/macros/s/AKfycbzXmhOqIFumVkR4DnVgb4COi0eSVV-T4FXNSRk7YJKCHT74Hl7P_Wp9uL38QkBc_cC6/exec',
             logo:'',
             contact:'',
             services:'',
@@ -38,6 +38,7 @@ const app = Vue.createApp({
                 res = await res.json()
                 // console.log(res)
                 this.profile = res
+                console.log(res);
                 this.logo=res.contact.logo
                 this.contact = res.contact
                 this.blogs = res.blogs

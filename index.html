@@ -21,7 +21,7 @@
 </head>
   <body id="app" class="bg-blight overflow-x-hidden">
     <header-section  :utilities="utilities" :logo="logo" :contact="contact" ></header-section>
-    <hero-section :links="links" :utilities="utilities"></hero-section>
+    <hero-section :links="links" :utilities="utilities" :contact="contact"></hero-section>
     <hr class="container my-5">
     <main class="pb-5">
         <services-section :services="services" :utilities="utilities"></services-section>        
@@ -29,15 +29,15 @@
         <blogs-section :blogs="blogs" :utilities="utilities"></blogs-section>
     </main>
     <footer-section :services="services" :links="links" :utilities="utilities" :contact="contact"></footer-section>
-    <section v-if="showVideo" class="overflow-x-hidden w-100 h-100 bg-glass position-fixed z-3 top-0 start-0 d-flex justify-content-center align-items-center">
+    <section v-if="showVideo" class="overflow-x-hidden w-100 h-100 bg-glass position-fixed z-2 top-0 start-0 d-flex justify-content-center align-items-center">
         <div class="showVideo">
             <figure class="ratio ratio-16x9 shadow">
-                <video src="./assets/img/video1.mp4" class="rounded" autoplayy controls></video>
+                <video :src="contact.video" class="rounded" autoplay controls></video>
             </figure>
             <button @click="showVideo = !showVideo" class="btn btn-sm btn-secondary">skip video</button>
         </div>
     </section>
-    <section v-if="blogSpinner" class="w-100 h-100 z-2 position-fixed top-0 start-0 bg-glass d-flex justify-content-center align-items-center">
+    <section v-if="blogSpinner" class="w-100 h-100 z-3 position-fixed top-0 start-0 bg-glass d-flex justify-content-center align-items-center">
         <span class="spinner spinner-grow"></span>
     </section>
 
