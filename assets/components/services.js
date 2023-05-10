@@ -5,7 +5,7 @@ export default {
     <section class="container" id="#services">
         <div class="row">
             <h2 class="fs-3 cin text">Empowering Your Media Production with Our Tailored Solutions</h2>
-            <small class="pop text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quas enim officia harum, maxime eaque.</small>
+            <small class="pop text-secondary">Unleash your media potential with personalized production solutions that elevate your brand to new heights</small>
         </div>
         <div class="row justify-content-start g-3 my-3">
             <section class="col-12 col-lg-4" v-for="s in services" :key="s">
