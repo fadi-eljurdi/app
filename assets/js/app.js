@@ -1,4 +1,3 @@
-// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 import utilities from '../js/utilities.js'
 import banner from '../components/banner.js'
 import blogs from '../components/blogs.js'
@@ -91,7 +90,6 @@ const app = Vue.createApp({
 })
 
 
-app.mount('#app')
 app.component('blogs-section', blogs)
 app.component('footer-section', footer)
 app.component('header-section', header)
@@ -101,3 +99,5 @@ app.component('banner-section', banner)
 app.component('check-also', checkAlso)
 app.component('blog-navigation', blogNavigation)
 app.component('blog-media',blogMedia)
+
+app.mount('#app')
