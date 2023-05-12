@@ -54,6 +54,14 @@ const app = Vue.createApp({
             this.blogSpinner = true
             const original = document.querySelector('#original');
             // console.log(original.innerHTML);
+            var source = ()=>{
+                if(this.dir() == 'rtl') return 'ar'
+                return 'en'
+            }
+            var target = ()=>{
+                if(this.dir() == 'rtl') return 'en'
+                return 'ar'
+            }
             var api = this.api
             api += `?translate=1`
             var res = await fetch(api,{
@@ -63,29 +71,59 @@ const app = Vue.createApp({
                 },
                 body:JSON.stringify({
                     text:original.innerHTML,
-                    source:'en',
-                    target:'ar'
+                    source:source(),
+                    target:target()
 
                 })
             })
 
             res = await res.json()
             console.log(res);
-            var translated = document.querySelector('#translated')
-            translated.setAttribute('dir','rtl')
-            translated.classList.add('arb')
+            this.font()
             translated.innerHTML = (utilities.fixClosingTags(res)).replaceAll(' & nbsp؛ ',' ')
             this.translated = true
             
             this.blogSpinner = false
 
 
+        },
+        font(){
+            if(document.querySelector('html').lang == 'ar'){
+                //the page is already in arabic
+                
+                var translated = document.querySelector('#translated')
+                translated.setAttribute('dir','ltr')
+                translated.classList.add('pop')
+            }else{
+                // the page is in english
+                
+                var translated = document.querySelector('#translated')
+                translated.setAttribute('dir','rtl')
+                translated.classList.add('arb')
+            }
+        },
+        dir(){
+            if(document.querySelector('html').lang == 'ar') return 'rtl'
+            else return 'ltr'
+            
         }
 
     },
     mounted() {
         this.getProfile()
         // this.translate()
+        if(document.querySelector('html').lang == 'ar'){
+            if(document.getElementById('original')){
+                document.getElementById('original').dir = 'rtl'
+                document.getElementById('original').classList.add('arb')
+            }
+        }else{
+            if(document.getElementById('original')){
+                
+                document.getElementById('original').dir = 'ltr'
+                document.getElementById('original').classList.add('pop')
+            }
+        }
     }
 })
 
