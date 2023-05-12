@@ -1,6 +1,6 @@
 
             <!DOCTYPE html>
-            <html lang="en">
+            <html lang="ar">
             <head>
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,7 +54,7 @@
                             <div class="col-12 col-lg-8">
                                 <article class="shadow-sm bg-light p-3 rounded">
                                     <blog-media :media='[{"type":"youtube","alt":"Youtube video","src":"5sVm5eg8AiY"}]'></blog-media>
-                                    <section v-show="!translated" id="original" class="pop">
+                                    <section v-show="!translated" id="original" class="pop" :dir="dir">
                                     <h1>صدى الإبداع والحماية: كيف تحمي حقوقك الفكرية وتطور مشروعك؟</h1>
                                     <p>في هذا العصر الحالي الذي يعتمد بشكل أساسي على التكنولوجيا، نرى زيادة كبيرة في عدد الأعمال والمنتجات الإبداعية التي تنتجها الشركات والأفراد. ومن المفترض أن يحصل أصحاب هذه الأعمال على حماية لحقوقهم كمبدعين، وهذا ما تقدمه لكم محمود مشون وفادي الجردي في دليلهم الشامل للملكية الفكرية وبراءات الاختراع والعلامات التجارية.<br><br>يعرض الدليل كافة المفاهيم الهامة حول حماية حقوق المبدعين في المجال القانوني، حيث يشرح بشكل شافي المفاهيم المتعلقة بالبراءات والعلامات التجارية وحماية الحقوق الفكرية والمزايدة والتنافس غير الصحي والعقود والأدلة والإجراءات القضائية.<br><br>يتضمن الدليل بالإضافة إلى ذلك، نصائح حول الخطوات الأولى التي يجب اتخاذها عند حدوث انتهاك لحقوق المبدعين، كما يستعرض الدليل الخيارات المتاحة للمبدعين لحماية حقوقهم في الداخل والخارج.<br><br>علما بأن هذا الدليل لا يهدف إلى إعطاء النصح القانوني فهو مجرد مرجع توضيحي وشرحي. وعلى الرغم من ذلك، سيساعدك الدليل على تحديد الجوانب الرئيسية التي يجب مراعاتها لحماية حقوق المبدعين.<br><br>كما يتضمن الدليل، نصائح حول الخطوات الأولى التي يجب اتخاذها عند حدوث انتهاك لحقوق المبدعين، كما يستعرض الدليل الخيارات المتاحة للمبدعين لحماية حقوقهم في الداخل والخارج.<br><br>اختيار الامتياز الصحيح يعد الخطوة الأولى سواء كان هذا يتضمن خيارات الحماية الداخلية أو الدولية. يشمل هذا أيضاً إنشاء علامة تجارية قوية وبناء سمعة جيدة لأعمالك.<br><br>إذا كنت تريد حماية حقوقك كمبدع، فيمكنك الحصول على نسختك من دليل "حماية حقوق المبدعين"، الذي يحتوي على كافة المعلومات اللازمة والضرورية لإعطائك فكرة واضحة عن حماية الحقوق الفكرية وبراءات الاختراع والعلامات التجارية.</p> 
                                     </section>
@@ -74,13 +74,13 @@
                                 </article>
                             </div>
                             <div class="col-12 col-lg-4">
-                                <check-also :blogs="profile.blogs" :utilities="utilities"></check-also>
+                                <check-also :blogs="blogs" :utilities="utilities"></check-also>
                             </div>
                         </div>
                     </section>
                 </main>
                 
-                <footer-section :services="profile.services" :links="profile.links" :utilities="utilities" :contact="profile.contact"></footer-section>
+                <footer-section :services="services" :links="links" :utilities="utilities" :contact="contact"></footer-section>
                 
                 <section v-if="blogSpinner" class="w-100 h-100 z-3 position-fixed top-0 start-0 bg-glass d-flex justify-content-center align-items-center">
                     <span class="spinner spinner-grow"></span>
