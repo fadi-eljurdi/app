@@ -3,10 +3,10 @@ export default {
     /*html*/
     `
     <header class="w-100 p-3 z-3 position-fixed top-0 start-0 bg-light shadow d-flex align-items-center justify-content-between">
-        <section>
+        <section class="">
             <a :href="utilities.env('/')">
                 <div v-if="!logo" class="skeleton rounded" style="width:100px;height:30px;"></div>
-                <img v-else :src="logo" alt="Jurdi logo" width="100" class="img-fluid">
+                <div class="ratio ratio-16x9" style="width:80px;"><img v-else :src="logo" alt="Jurdi logo" class="img-fluid object-fit-cover rounded"></div>
             </a>
         </section>
         <nav class="d-none d-md-flex align-items-center gap-3 pop">

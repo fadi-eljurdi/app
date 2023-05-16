@@ -2,7 +2,7 @@ export default {
     template:
     /*html */
     `
-    <section class="container" style="margin-top: 90px;">
+    <section class="container" style="margin-top: 100px;">
         <div class="row justify-content-between g-3">
             <section class="col-12 col-lg-6 order-2">
                 <div class="d-flex flex-column">
