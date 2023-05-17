@@ -6,7 +6,7 @@ export default {
         <section class="">
             <a :href="utilities.env('/')">
                 <div v-if="!logo" class="skeleton rounded" style="width:100px;height:30px;"></div>
-                <div class="ratio ratio-16x9" style="width:80px;"><img v-else :src="logo" alt="Jurdi logo" class="img-fluid object-fit-cover rounded"></div>
+                <div v-else class="ratio ratio-16x9" style="width:80px;"><img :src="logo" alt="Jurdi logo" class="img-fluid object-fit-cover rounded"></div>
             </a>
         </section>
         <nav class="d-none d-md-flex align-items-center gap-3 pop">
