@@ -9,7 +9,7 @@ export default {
                 <div v-else class="ratio ratio-16x9" style="width:80px;"><img :src="logo" alt="Jurdi logo" class="img-fluid object-fit-cover rounded"></div>
             </a>
         </section>
-        <nav class="d-none d-md-flex align-items-center gap-3 pop">
+        <nav class="d-none d-lg-flex align-items-center gap-3 pop">
             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/')">Home</a>
             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/services')">Services</a>
             
@@ -27,7 +27,7 @@ export default {
                 <li><a class="dropdown-item" :href="contact.whatsapp"><i class="bi bi-whatsapp me-1"></i> Whatsapp</a></li>
             </ul>
         </nav>
-        <i class="d-block d-md-none fs-3 bi bi-three-dots-vertical" type="button" data-bs-toggle="dropdown" ></i>
+        <i class="d-block d-lg-none fs-3 bi bi-three-dots-vertical" type="button" data-bs-toggle="dropdown" ></i>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" :href="utilities.env('/')">Home</a></li>
             <li><a class="dropdown-item" :href="utilities.env('/services')">Services</a></li>
