@@ -14,6 +14,9 @@ export default {
             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/services')">Services</a>
             
             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/blogs')">Blogs</a>
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/disclaimer.html')">Disclaimer</a>
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/acceptable-usage.html')">Acceptable Usage</a>
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/cookie-policy.html')">Cookies policy</a>
             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/privacy-policy.html')">Privacy Policy</a>
             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/terms.html')">Terms</a>
             <button class="btn btn-success btn-sm px-3" data-bs-toggle="dropdown">Contact</button>
@@ -31,6 +34,9 @@ export default {
             <li><a class="dropdown-item" :href="utilities.env('/blogs')">Blogs</a></li>
             <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
             <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms</a></li>
+            <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
+            <li><a class="dropdown-item" :href="utilities.env('/acceptable-usage.html')">Acceptable Usage</a></li>
+            <li><a class="dropdown-item" :href="utilities.env('/cookie-policy.html')">Cookies Policy</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" :href="'mailto:'+contact.email"><i class="bi bi-envelope me-1"></i> {{contact.email}} </a></li>
             <li><a class="dropdown-item" :href="'tel:'+contact.number"><i class="bi bi-telephone-forward me-1"></i> +{{contact.number}}</a></li>
