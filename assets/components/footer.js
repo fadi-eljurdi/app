@@ -15,7 +15,7 @@ export default {
                                 <i class="fs-5 bi bi-envelope text-secondary"></i>
                                 <span>{{contact.email}}</span>
                             </a>
-                            <a :href="contact.whatsapp" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                            <a :href="'https://wa.me/'+contact.whatsapp" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
                                 <i class="fs-5 bi bi-whatsapp text-secondary"></i>
                                 <span>+{{contact.number}}</span>
                             </a>
