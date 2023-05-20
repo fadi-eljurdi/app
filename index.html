@@ -33,7 +33,7 @@
         <section v-if="showVideo" class="overflow-x-hidden w-100 h-100 bg-glass position-fixed z-2 top-0 start-0 d-flex justify-content-center align-items-center">
             <div class="showVideo">
                 <figure class="ratio ratio-16x9 shadow">
-                    <video :src="contact.video" class="rounded" autoplay controls></video>
+                    <video :src="utilities.convertGoogleDriveLink(contact.video)" class="rounded" autoplay controls></video>
                 </figure>
                 <button @click="showVideo = !showVideo" class="btn btn-sm btn-secondary">skip video</button>
             </div>

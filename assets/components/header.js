@@ -14,11 +14,14 @@ export default {
             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/services')">Services</a>
             
             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/blogs')">Blogs</a>
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/disclaimer.html')">Disclaimer</a>
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/acceptable-usage.html')">Acceptable Usage</a>
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/cookie-policy.html')">Cookies policy</a>
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/privacy-policy.html')">Privacy Policy</a>
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" :href="utilities.env('/terms.html')">Terms</a>
+            <span  data-bs-toggle="dropdown" class="link-offset-2 text-primary link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover point">Policies and Terms of use</span>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms of use</a></li>
+            <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
+            <li><a class="dropdown-item" :href="utilities.env('/cookie-policy.html')">Cookies Policy</a></li>
+            <li><a class="dropdown-item" :href="utilities.env('/acceptable-usage.html')">Acceptable usage policy</a></li>
+            <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
+            </ul>
             <button class="btn btn-success btn-sm px-3" data-bs-toggle="dropdown">Contact</button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" :href="'mailto:'+contact.email"><i class="bi bi-envelope me-1"></i> {{contact.email}} </a></li>

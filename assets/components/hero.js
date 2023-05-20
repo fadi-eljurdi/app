@@ -22,12 +22,12 @@ export default {
                 
                 <div class="d-flex justify-content-center">
                     <div class="ratio ratio-16x9">
-                        <video :src="contact.video" controls class="rounded img-fluid"></video>
+                        <video :src="utilities.convertGoogleDriveLink(contact.video)" controls class="rounded img-fluid"></video>
                     </div>
                 </div>
             </section>
         </div>
     </section>
     `,
-    props:['links','contact']
+    props:['links','contact','utilities']
 }

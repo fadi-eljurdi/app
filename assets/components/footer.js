@@ -49,7 +49,7 @@ export default {
                 <section class="col-12 col-lg-3">
                     <div class="d-flex flex-column gap-1">
                         
-                        <h2 class="fs-4 text-light opacity-75 m-0">Useful links</h2>
+                        <h2 class="fs-4 text-light opacity-75 m-0">Our Business Partners</h2>
                         <p class="fs-smaller text-light opacity-50">Connecting you to the resources you need.</p>
                         <div class="d-flex flex-column gap-2">
                             <a 
