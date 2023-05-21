@@ -11,7 +11,9 @@
     font-family: 'Cinzel', serif;
 
 }
-
+#logo{
+    transform: scale(2);
+}
 .arb{
     font-family: 'Almarai', sans-serif !important;
 }
