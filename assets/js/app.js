@@ -13,7 +13,7 @@ import blogMedia from '../components/blog-media.js'
 const app = Vue.createApp({
     data() {
         return {
-            api: 'https://script.google.com/macros/s/AKfycbzXmhOqIFumVkR4DnVgb4COi0eSVV-T4FXNSRk7YJKCHT74Hl7P_Wp9uL38QkBc_cC6/exec',
+            api: 'https://script.google.com/macros/s/AKfycbwyxYcEpCduN0XEp4rAfbyBcEiUceNNRDRBa4wRLxCCM_uAT-OIRujD2f25Rf9rkpP_/exec',
             logo:'',
             contact:'',
             services:'',
@@ -43,6 +43,9 @@ const app = Vue.createApp({
                 this.blogs = res.blogs
                 this.services = res.services
                 this.links = res.links
+                
+                // console.log(this.utilities.getYouTubeId(this.contact.video));
+                this.contact.video = this.utilities.getYouTubeId(this.contact.video)
                 this.blogSpinner = false
             } catch (err) {
                 console.log(err)

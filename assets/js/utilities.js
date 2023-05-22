@@ -69,4 +69,10 @@ function convertGoogleDriveLink(link) {
     }
 }
 
-export default { env, timo, dotmark, parseHTML, shareBlog, fixClosingTags, convertGoogleDriveLink }
+function getYouTubeId(url) {
+    const regex = /^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/|live\/\?v=)|youtu\.be\/)([^\s&]+)/;
+    const match = url.match(regex);    
+    return match ? match[1] : null;
+}
+
+export default { env, timo, dotmark, parseHTML, shareBlog, fixClosingTags, convertGoogleDriveLink, getYouTubeId }

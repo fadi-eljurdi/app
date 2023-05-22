@@ -6,8 +6,8 @@ export default {
     <section class="container">
         
         <div class="row">
-            <h2 class="fs-3 cin text">Expand Your Knowledge with Our Thoughtful and Informative Articles</h2>
-            <small class="pop text-secondary">Our blog is dedicated to providing thoughtful and informative articles that are designed to help you expand your knowledge and understanding of a wide range of topics.</small>
+            <h2 class="fs-3 cin text">{{contact.bHeading}}</h2>
+            <small class="pop text-secondary">{{contact.bTagline}}</small>
         </div>
         
         <div class="row justify-content-start g-3 my-3">
@@ -37,7 +37,7 @@ export default {
             else return this.blogs.slice(-8)
         }
     },
-    props:['blogs','utilities'],
+    props:['blogs','utilities','contact'],
     mounted(){
         if(location.href.includes('/blogs')){
             document.getElementById('show-more').classList.add('d-none')

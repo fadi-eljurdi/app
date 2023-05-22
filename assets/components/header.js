@@ -25,7 +25,6 @@ export default {
             <button class="btn btn-success btn-sm px-3" data-bs-toggle="dropdown">Contact</button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" :href="'mailto:'+contact.email"><i class="bi bi-envelope me-1"></i> {{contact.email}} </a></li>
-                <li><a class="dropdown-item" :href="'tel:'+contact.number"><i class="bi bi-telephone-forward me-1"></i> + {{contact.number}}</a></li>
                 <li><a class="dropdown-item" :href="contact.linkedIn"><i class="bi bi-linkedin me-1"></i> linkedIn</a></li>
                 <li><a class="dropdown-item" :href="'https://wa.me/'+contact.whatsapp"><i class="bi bi-whatsapp me-1"></i> Whatsapp</a></li>
             </ul>
@@ -42,7 +41,6 @@ export default {
             <li><a class="dropdown-item" :href="utilities.env('/cookie-policy.html')">Cookies Policy</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" :href="'mailto:'+contact.email"><i class="bi bi-envelope me-1"></i> {{contact.email}} </a></li>
-            <li><a class="dropdown-item" :href="'tel:'+contact.number"><i class="bi bi-telephone-forward me-1"></i> +{{contact.number}}</a></li>
             <li><a class="dropdown-item" :href="contact.linkedIn"><i class="bi bi-linkedin me-1"></i> linkedIn</a></li>
             <li><a class="dropdown-item" :href="'https://wa.me/'+contact.whatsapp"><i class="bi bi-whatsapp me-1"></i> Whatsapp</a></li>
         

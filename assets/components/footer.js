@@ -17,16 +17,37 @@ export default {
                             </a>
                             <a :href="'https://wa.me/'+contact.whatsapp" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
                                 <i class="fs-5 bi bi-whatsapp text-secondary"></i>
-                                <span>+{{contact.number}}</span>
+                                <span>Whatsapp chat</span>
                             </a>
                             <a :href="contact.linkedIn" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
                                 <i class="fs-5 bi bi-linkedin text-secondary"></i>
                                 <span>@JurdiLaw</span>
                             </a>
+                            
                             <span class="text-secondary d-flex gap-3 align-items-center">
                                 <i class="fs-5 bi bi-geo-alt-fill text-secondary"></i>
                                 <span>{{contact.address}}</span>
                             </span>
+                            <a :href="utilities.env('/terms.html')" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                                <i class="fs-5 bi bi-file-text text-secondary"></i>
+                                <span>Terms of use</span>
+                            </a>
+                            <a :href="utilities.env('/disclaimer.html')" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                                <i class="fs-5 bi bi-file-text text-secondary"></i>
+                                <span>Disclaimer</span>
+                            </a>
+                            <a :href="utilities.env('/privacy-policy.html')" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                                <i class="fs-5 bi bi-shield-check text-secondary"></i>
+                                <span>Privacy policy</span>
+                            </a>
+                            <a :href="utilities.env('/acceptable-usage.html')" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                                <i class="fs-5 bi bi-shield-check text-secondary"></i>
+                                <span>Acceptable usage policy</span>
+                            </a>
+                            <a :href="utilities.env('/cookie-policy.html')" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                                <i class="fs-5 bi bi-shield-check text-secondary"></i>
+                                <span>cookie policy policy</span>
+                            </a>
                         </div>
                     </div>
                 </section>
