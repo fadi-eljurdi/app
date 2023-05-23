@@ -8,6 +8,7 @@ function env(path) {
             // add /app/ directory to all links
             return '/app' + path
         }
+        return path
     }
 }
 
