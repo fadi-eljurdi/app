@@ -12,7 +12,7 @@ export default {
         
         <div class="row justify-content-start g-3 my-3">
             <section class="col-12 col-md-6 col-lg-3" v-for="b in lazyBlogs" :key="b">
-                <a :href="b.url">
+                <a :href="b.url"  style="text-decoration:none;">
                     <div class="p-3 shadow-sm bg-light rounded d-flex flex-column gap-1 pop">
                         <div class="ratio ratio-16x9"> 
                             <img :src="b.thumbnail" :alt="b.title" class="img-fluid object-fit-cover rounded-top skeleton">

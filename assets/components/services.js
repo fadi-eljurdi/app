@@ -9,7 +9,7 @@ export default {
         </div>
         <div class="row justify-content-start g-3 my-3">
             <section class="col-12 col-lg-4" v-for="s in services" :key="s">
-                <a :href="s.url">
+                <a :href="s.url" style="text-decoration:none;">
                     <div class="p-3 shadow-sm bg-light rounded d-flex flex-column gap-2 pop">
                         <div class="ratio ratio-16x9"><img :src="s.thumbnail" :alt="s.title" class="object-fit-cover skeleton img-fluid rounded-top"></div>
                         
