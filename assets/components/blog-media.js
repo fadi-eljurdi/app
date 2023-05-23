@@ -9,7 +9,7 @@ export default {
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="m in media">
                     <section class="ratio ratio-16x9" v-if="m.type == 'youtube'">
-                        <iframe class="img-fluid object-fit-cover rounded" :src="'https://www.youtube.com/embed/'+m.src" :title="m.alt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="img-fluid object-fit-cover rounded" :src="'https://www.youtube.com/embed/'+m.src+'?rel=0'" :title="m.alt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </section>
                     <section v-if="m.type == 'image'">
                         <div class="ratio ratio-16x9">
