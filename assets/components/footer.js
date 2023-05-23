@@ -21,7 +21,7 @@ export default {
                             </a>
                             <a :href="contact.linkedIn" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
                                 <i class="fs-5 bi bi-linkedin text-secondary"></i>
-                                <span>@JurdiLaw</span>
+                                <span>LinkedIn</span>
                             </a>
                             
                             <span class="text-secondary d-flex gap-3 align-items-center">
