@@ -18,7 +18,7 @@ export default {
             <ul class="dropdown-menu">
             <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms of use</a></li>
             <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
-            <li><a class="dropdown-item" :href="utilities.env('/cookie-policy.html')">Cookies Policy</a></li>
+            <!-- <li><a class="dropdown-item" :href="utilities.env('/cookie-policy.html')">Cookies Policy</a></li> -->
             <li><a class="dropdown-item" :href="utilities.env('/acceptable-usage.html')">Acceptable usage policy</a></li>
             <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
             </ul>
@@ -38,7 +38,7 @@ export default {
             <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms</a></li>
             <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
             <li><a class="dropdown-item" :href="utilities.env('/acceptable-usage.html')">Acceptable Usage</a></li>
-            <li><a class="dropdown-item" :href="utilities.env('/cookie-policy.html')">Cookies Policy</a></li>
+            <!-- <li><a class="dropdown-item" :href="utilities.env('/cookie-policy.html')">Cookies Policy</a></li> -->
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" :href="'mailto:'+contact.email"><i class="bi bi-envelope me-1"></i> {{contact.email}} </a></li>
             <li><a class="dropdown-item" :href="contact.linkedIn"><i class="bi bi-linkedin me-1"></i> linkedIn</a></li>

@@ -44,10 +44,11 @@ export default {
                                 <i class="fs-5 bi bi-shield-check text-secondary"></i>
                                 <span>Acceptable usage policy</span>
                             </a>
+                            <!--
                             <a :href="utilities.env('/cookie-policy.html')" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
                                 <i class="fs-5 bi bi-shield-check text-secondary"></i>
                                 <span>cookie policy policy</span>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </section>
