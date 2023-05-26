@@ -8,7 +8,7 @@ export default {
             <div class="row gy-5 gx-3 justify-content-between">
                 <section class="col-12 col-lg-5">
                     <div class="d-flex flex-column gap-1">
-                        <h2 class="fs-4 text-light opacity-75 m-0">JURDI MEDIA PRODUCTION CONSULTANTS</h2>
+                        <h2 class="fs-4 text-light opacity-75 m-0">Jurdi Media Production Consultants</h2>
                         <p class="fs-smaller text-light opacity-50">Our services cater to the unique needs of businesses within this niche, offering tailored solutions to help them achieve their goals and maximize their success.</p>
                         <div class="d-flex flex-column gap-2">
                             <a :href="'mailto:'+contact.email" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
