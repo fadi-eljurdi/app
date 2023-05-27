@@ -40,7 +40,7 @@ const app = Vue.createApp({
                 console.log(res);
                 this.logo=res.contact.logo
                 this.contact = res.contact
-                this.blogs = res.blogs
+                this.blogs = res.blogs.reverse()
                 this.services = res.services
                 this.links = res.links
                 
