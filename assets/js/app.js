@@ -40,7 +40,11 @@ const app = Vue.createApp({
                 console.log(res);
                 this.logo=res.contact.logo
                 this.contact = res.contact
-                this.blogs = res.blogs.reverse()
+                if(location.href.includes('/blogs')){
+                    this.blogs = res.blogs.reverse()
+                }else{
+                    this.blogs = res.blogs.slice(-8).reverse()
+                }
                 this.services = res.services
                 this.links = res.links
                 
