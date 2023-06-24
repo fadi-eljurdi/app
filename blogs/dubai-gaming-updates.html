@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dubai Gaming Updates </title>
+
+    <meta name="title" content="Dubai Gaming Updates ">
+    <meta name="description" content="latest gaming updates in Dubai.  From new game releases to exciting tournaments, gaming events and gaming experience in Dubai. Media and gaming consultant in the Middle East, gaming industry in Saudi Arabia, gaming industry in the United Arab Emirates, gaming industry in Lebanon, AI in gaming, fair use and copyright, AI-generated content, emerging gaming markets.">
+    <meta name="keywords" content="media consultants, gaming consultants, Middle East, Saudi Arabia, United Arab Emirates, gaming industry, gaming festival, immersive experiences, media and gaming consultancy, latest trends, industry leaders, networking, business collaborations.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="Fadi ElJurdi">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jurdiconsult.media/blogs/dubai-gaming-updates.html">
+    <meta property="og:title" content="Dubai Gaming Updates ">
+    <meta property="og:description" content="latest gaming updates in Dubai.  From new game releases to exciting tournaments, gaming events and gaming experience in Dubai. Media and gaming consultant in the Middle East, gaming industry in Saudi Arabia, gaming industry in the United Arab Emirates, gaming industry in Lebanon, AI in gaming, fair use and copyright, AI-generated content, emerging gaming markets.">
+    <meta property="og:image" content="https://img.youtube.com/vi/N_zZcJGSpFM/sddefault.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jurdiconsult.media/blogs/dubai-gaming-updates.html">
+    <meta property="twitter:title" content="Dubai Gaming Updates ">
+    <meta property="twitter:description" content="latest gaming updates in Dubai.  From new game releases to exciting tournaments, gaming events and gaming experience in Dubai. Media and gaming consultant in the Middle East, gaming industry in Saudi Arabia, gaming industry in the United Arab Emirates, gaming industry in Lebanon, AI in gaming, fair use and copyright, AI-generated content, emerging gaming markets.">
+    <meta property="twitter:image" content="https://img.youtube.com/vi/N_zZcJGSpFM/sddefault.jpg">
+    <link rel="shortcut icon" href="https://img.youtube.com/vi/N_zZcJGSpFM/sddefault.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link  href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="../assets/css/swiper.min.css" />
+    <!-- Dayjs -->
+    <script defer src="../assets/js/day.min.js"></script>
+    <script defer src="../assets//js/relativetime.min.js"></script>
+    <!-- VUE JS -->
+    <script defer src="../assets/js/vue.global.prod.js"></script>
+    
+
+</head>
+
+<body id="app" class="bg-blight">
+
+    <blog-navigation :utilities="utilities">Dubai Gaming Updates </blog-navigation>
+    <main style="margin: 80px 0px ;">
+        <section class="container">
+            <div class="row g-3">
+                <div class="col-12 col-lg-8">
+                    <article class="shadow-sm bg-light p-3 rounded">
+                        <blog-media :media='[{"type":"youtube","alt":"Youtube video","src":"N_zZcJGSpFM"}]'></blog-media>
+                        <section v-show="!translated" id="original">
+                            <h1>Dubai Gaming Updates </h1>
+                            <p>Prepare yourself for an exhilarating and unforgettable experience as the highly anticipated Dubai Esports & Games Festival (DEF) returns in full force for 2023. This extraordinary event promises to elevate the gaming scene to new heights in the Middle East, specifically in  the United Arab Emirates (UAE), through five days of action-packed events and engaging activities. Immerse yourself in the electrifying atmosphere of the GameExpo, where the future of the gaming industry takes center stage. Don't miss the GameExpo Summit powered by PG Connects, which brings together industry leaders and visionaries to discuss the latest trends and innovations in the media and gaming sectors in the Middle East.<br><br>DEF 2023 boasts an impressive lineup of captivating tournaments, including the highly anticipated Minecraft Education Challenge, making it the ideal destination for gamers and enthusiasts seeking immersive experiences in the Middle East, Saudi Arabia, or the UAE.<br><br>As the premier gaming festival in the region, DEF 2023 offers a unique platform for media and gaming consultants in the Middle East, Saudi Arabia, and the UAE to connect with like-minded individuals and showcase their expertise. It is a must-attend event for those seeking media and gaming consultancy services in the region.<br><br>At DEF 2023, media and gaming enthusiasts have the opportunity to witness the latest advancements in the industry, connect with leading consultants, and explore business collaborations. Whether you're a media professional looking to expand your network or a gaming consultant seeking new opportunities in the Middle East, Saudi Arabia, or the UAE, DEF 2023 provides the ideal platform to showcase your skills and establish valuable connections.<br><br>It is an incredible opportunity to be part of the gaming extravaganza of the year. Mark your calendars and get ready to immerse yourself in the world of gaming and media consultancy at DEF 2023 in Dubai, the Middle East's gaming hub.<br><br><br><br><br></p>
+                        </section>
+                        <section v-show="translated" id="translated"></section>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center fs-small pop text-secondary">
+                                <time>{{utilities.timo('Fri Jun 16 2023 21:18:34 GMT-0400 (Eastern Daylight Time)')}}</time>
+                                <i class="bi bi-dot"></i>
+                                <span v-show="!translated" class="point text-decoration-underline"
+                                    @click="translate">see translation</span>
+                                <span v-show="translated" class="point text-decoration-underline"
+                                    @click="translated = !translated">see original</span>
+
+                            </div>
+                            <div class="d-flex align-items-center gap-3 point">
+                                <i title="share this page" class="bi bi-share-fill text-secondary"
+                                    @click="utilities.shareBlog(`Dubai Gaming Updates `,`https://jurdiconsult.media/blogs/dubai-gaming-updates.html`)"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <check-also :blogs="blogs" :utilities="utilities"></check-also>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer-section :services="services" :links="links" :utilities="utilities" :contact="contact"></footer-section>
+
+    <section v-if="blogSpinner"
+        class="w-100 h-100 z-3 position-fixed top-0 start-0 bg-glass d-flex justify-content-center align-items-center">
+        <span class="spinner spinner-grow"></span>
+    </section>
+
+
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script type="module" src="../assets/js/app.js"></script>
+
+
+</body>
+
+</html>
