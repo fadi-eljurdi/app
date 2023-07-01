@@ -59,10 +59,10 @@
 
 </head>
   <body id="app" class=" overflow-x-hidden">
-        <header-section  :utilities="utilities" :logo="logo" :contact="contact" ></header-section>
+        <header-section  :utilities="utilities" :logo="logo" :contact="contact" :form="form"></header-section>
         <hero-section :links="links" :utilities="utilities" :contact="contact">
             <!-- video slot -->
-            <iframe width="560" height="315" :src="'https://www.youtube-nocookie.com/embed/'+contact.video+'?rel=0'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="skeleton img-fluid" width="560" height="315" :src="'https://www.youtube-nocookie.com/embed/'+contact.video+'?rel=0'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         </hero-section>
         <hr class="container my-5">
@@ -71,21 +71,38 @@
             <hr class="container my-5">
             <blogs-section :contact="contact" :blogs="blogs" :utilities="utilities"></blogs-section>
         </main>
-        <footer-section :services="services" :links="links" :utilities="utilities" :contact="contact"></footer-section>
-        <section v-if="showVideo" class="overflow-x-hidden w-100 h-100 bg-glass position-fixed z-2 top-0 start-0 d-flex justify-content-center align-items-center">
+        <footer-section :services="services" :links="links" :utilities="utilities" :contact="contact" :form="form"></footer-section>
+        <!-- <section v-if="showVideo" class="overflow-x-hidden w-100 h-100 bg-glass position-fixed z-2 top-0 start-0 d-flex justify-content-center align-items-center">
             <div class="showVideo">
                 <figure class="ratio ratio-16x9 shadow">
                     <iframe width="560" height="315" :src="'https://www.youtube-nocookie.com/embed/'+contact.video+'?rel=0'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </figure>
                 <button @click="showVideo = !showVideo" class="btn btn-sm btn-secondary">skip video</button>
             </div>
-        </section>
+        </section> -->
         <section v-if="blogSpinner" class="w-100 h-100 z-3 position-fixed top-0 start-0 bg-glass d-flex justify-content-center align-items-center">
             <span class="spinner spinner-grow"></span>
         </section>
         <!-- <section class="w-100 h-100 z-3 position-fixed top-0 start-0 bg-light d-flex justify-content-center align-items-center">
             <h6>Site under development..</h6>
         </section> -->
+
+        <aside v-if="form.showForm" class="bg-glass w-100 h-100 position-fixed top-0 start-0 z-2 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8 bg-light p-3 rounded d-flex flex-column gap-2">
+                        <h6>Send us a message</h6>
+                        <input v-model="form.name" type="text" class="form-control" placeholder="Enter name">
+                        <input v-model="form.subject" type="text" class="form-control" placeholder="Enter Subject">
+                        <textarea v-model="form.message" cols="30" rows="10" class="form-control" placeholder="Write a message.."></textarea>
+                        <div class="d-flex gap-2">
+                        <a :href="link" class="btn btn-sm btn-primary px-3">Send</a>
+                        <button class="btn btn-sm btn-outline-secondary px-3" @click="form.showForm = !form.showForm">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
       
     <script src="./assets/js/bootstrap.min.js"></script>
     <script type="module" src="./assets/js/app.js"></script>

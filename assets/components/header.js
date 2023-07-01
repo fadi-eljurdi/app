@@ -24,28 +24,31 @@ export default {
             </ul>
             <button class="btn btn-success btn-sm px-3" data-bs-toggle="dropdown">Contact</button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" :href="'mailto:'+contact.email"><i class="bi bi-envelope me-1"></i> {{contact.email}} </a></li>
+                <li><span class="dropdown-item" @click="form.showForm = !form.showForm"><i class="bi bi-envelope me-1"></i> Email </span></li>
                 <li><a class="dropdown-item" :href="contact.linkedIn"><i class="bi bi-linkedin me-1"></i> linkedIn</a></li>
                 <li><a class="dropdown-item" :href="'https://wa.me/'+contact.whatsapp"><i class="bi bi-whatsapp me-1"></i> Whatsapp</a></li>
             </ul>
         </nav>
-        <i class="d-block d-lg-none fs-3 bi bi-three-dots-vertical" type="button" data-bs-toggle="dropdown" ></i>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" :href="utilities.env('/')">Home</a></li>
-            <li><a class="dropdown-item" :href="utilities.env('/services')">Services</a></li>
-            <li><a class="dropdown-item" :href="utilities.env('/blogs')">Blogs</a></li>
-            <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
-            <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms</a></li>
-            <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
-            <li><a class="dropdown-item" :href="utilities.env('/acceptable-usage.html')">Acceptable Usage</a></li>
-            <!-- <li><a class="dropdown-item" :href="utilities.env('/cookie-policy.html')">Cookies Policy</a></li> -->
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" :href="'mailto:'+contact.email"><i class="bi bi-envelope me-1"></i> {{contact.email}} </a></li>
-            <li><a class="dropdown-item" :href="contact.linkedIn"><i class="bi bi-linkedin me-1"></i> linkedIn</a></li>
-            <li><a class="dropdown-item" :href="'https://wa.me/'+contact.whatsapp"><i class="bi bi-whatsapp me-1"></i> Whatsapp</a></li>
-        
-        </ul>
+        <div class="d-flex gap-2 align-items-center d-block d-lg-none">
+            <i class="bi bi-telephone-outbound d-block d-lg-none fs-5" data-bs-toggle="dropdown"></i>
+            <ul class="dropdown-menu">
+                <li><span class="dropdown-item" @click="form.showForm = !form.showForm" ><i class="bi bi-envelope me-1"></i> Email </span></li>
+                <li><a class="dropdown-item" :href="'https://wa.me/'+contact.whatsapp"><i class="bi bi-whatsapp me-1"></i> Whatsapp</a></li>
+                <li><a class="dropdown-item" :href="contact.linkedIn"><i class="bi bi-linkedin me-1"></i> linkedIn</a></li>
+            </ul>
+            <i class="d-block d-lg-none fs-3 bi bi-three-dots-vertical" type="button" data-bs-toggle="dropdown" ></i>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" :href="utilities.env('/')">Home</a></li>
+                <li><a class="dropdown-item" :href="utilities.env('/services')">Services</a></li>
+                <li><a class="dropdown-item" :href="utilities.env('/blogs')">Blogs</a></li>
+                <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
+                <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms</a></li>
+                <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
+                <li><a class="dropdown-item" :href="utilities.env('/acceptable-usage.html')">Acceptable Usage</a></li>
+                <!-- <li><a class="dropdown-item" :href="utilities.env('/cookie-policy.html')">Cookies Policy</a></li> -->
+            </ul>
+        </div>
     </header>
     `,
-    props:['utilities','logo','contact']
+    props:['utilities','logo','contact','form']
 }

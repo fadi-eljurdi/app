@@ -23,7 +23,14 @@ const app = Vue.createApp({
             links:'',
             blogSpinner:true,
             showVideo:true,
-            translated:false
+            translated:false,
+            
+            form:{
+                name:'',
+                subject:'',
+                message:'',
+                showForm:false
+            }
             
         }
     },
@@ -43,7 +50,7 @@ const app = Vue.createApp({
                 if(location.href.includes('/blogs')){
                     this.blogs = res.blogs.reverse()
                 }else{
-                    this.blogs = res.blogs.slice(-8).reverse()
+                    this.blogs = res.blogs.slice(-4).reverse()
                 }
                 this.services = res.services
                 this.links = res.links
@@ -130,6 +137,12 @@ const app = Vue.createApp({
                 document.getElementById('original').dir = 'ltr'
                 document.getElementById('original').classList.add('pop')
             }
+        }
+    },
+    computed:{
+        
+        link(){
+            return `mailto:${this.contact.email}?subject=${encodeURIComponent(this.form.subject)}&body=${encodeURIComponent('Name: '+this.form.name+'\n\n'+this.form.message)}`
         }
     }
 })
