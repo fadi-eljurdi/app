@@ -41,7 +41,7 @@
 
 </head>
   <body id="app" class="bg-blight overflow-x-hidden">
-        <header-section  :utilities="utilities" :logo="logo" :contact="contact" ></header-section>
+        <header-section  :utilities="utilities" :logo="logo" :contact="contact"  :form="form"></header-section>
         <main style="margin-top: 100px; min-height: 400px;" class="pb-5 text-dark container">
             <div name="termly-embed" data-id="e650a1a6-c4e0-4bc7-9b89-c28c37a1e43e" data-type="iframe"></div>
 <script type="text/javascript">(function(d, s, id) {
@@ -52,7 +52,7 @@ js.src = "https://app.termly.io/embed-policy.min.js";
 tjs.parentNode.insertBefore(js, tjs);
 }(document, 'script', 'termly-jssdk'));</script>
         </main>
-        <footer-section :services="services" :links="links" :utilities="utilities" :contact="contact"></footer-section> 
+        <footer-section :services="services" :links="links" :utilities="utilities" :contact="contact" :form="form"></footer-section> 
         <section v-if="blogSpinner" class="w-100 h-100 z-3 position-fixed top-0 start-0 bg-glass d-flex justify-content-center align-items-center">
             <span class="spinner spinner-grow"></span>
         </section> 

@@ -19,13 +19,13 @@
 
     </head>
   <body id="app" class="bg-blight">
-    <header-section  :utilities="utilities" :logo="logo" :contact="contact" ></header-section>
+    <header-section  :utilities="utilities" :logo="logo" :contact="contact"  :form="form"></header-section>
 
     <hr class="container my-5">
     <main class="pb-5">
       <services-section :contact="contact" :services="profile.services" :utilities="utilities"></services-section>
     </main>
-    <footer-section :services="profile.services" :links="links" :utilities="utilities" :contact="contact" ></footer-section>
+    <footer-section :services="profile.services" :links="links" :utilities="utilities" :contact="contact" :form="form" ></footer-section>
 
     <section v-if="blogSpinner" class="w-100 h-100 z-2 position-fixed top-0 start-0 bg-glass d-flex justify-content-center align-items-center">
       <span class="spinner spinner-grow"></span>
