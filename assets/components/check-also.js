@@ -4,7 +4,7 @@ export default {
     `
     <aside class="shadow-sm bg-light p-3 rounded">
         <h5 class="m-0 fs-5 pop">Check also</h5>
-        <small class="fs-xsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eaque.</small>
+        <!-- <small class="fs-xsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eaque.</small> -->
         <div class="row mt-3 g-3">
             <div v-for="b in blogs.slice(-8)" :key="b" class="col-12 d-flex gap-1 align-items-center">
                 <span class="material-symbols-outlined text-secondary">feed</span>

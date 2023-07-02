@@ -7,7 +7,7 @@ export default {
         
         <div class="row">
             <h2 class="fs-3 cin text">{{contact.bHeading}}</h2>
-            <small class="pop text-secondary">{{contact.bTagline}}</small>
+            <!-- <small class="pop text-secondary">{{contact.bTagline}}</small> -->
         </div>
         
         <div class="row justify-content-start g-3 my-3">
@@ -22,7 +22,8 @@ export default {
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         <p class="text-secondary text-fade-3 fs-small px-1 m-0" style="height: 60px;">{{b.description}}</p>
-                        <time class="p-1 fs-xsmall text-secondary mono m-0">{{utilities.timo(b.date)}} </time>
+                        <time class="p-1 fs-xsmall text-secondary mono m-0 fw-bold">{{utilities.timo(b.date)}} </time>
+                        <button class="btn btn-outline-primary btn-sm">Check the full blog</button>
                     </div>
                 </a>
             </section>
