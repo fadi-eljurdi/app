@@ -35,7 +35,7 @@ export default {
         </div>  -->
         
         <div class="row justify-content-start g-3 my-3">
-        <section class="col-12 col-md-6 col-lg-3" v-for="b in blogs" :key="b">
+        <section class="col-12 col-md-6" v-for="b in blogs" :key="b">
             <a :href="b.url"  style="text-decoration:none !important;">
                 <div class="p-3 shadow-sm bg-light rounded d-flex flex-column gap-3 pop">
                     <div class="d-flex align-items-center gap-3"> 
