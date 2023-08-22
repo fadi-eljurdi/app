@@ -10,6 +10,7 @@ export default {
             <!-- <small class="pop text-secondary">{{contact.bTagline}}</small> -->
         </div>
         
+        <!--
         <div class="row justify-content-start g-3 my-3">
             <section class="col-12 col-md-6 col-lg-3" v-for="b in blogs" :key="b">
                 <a :href="b.url"  style="text-decoration:none;">
@@ -31,7 +32,27 @@ export default {
                 <span class="text-fade text-center">show more</span>
                 <i class="bi bi-arrow-right"></i>
             </a>
-        </div>
+        </div>  -->
+        
+        <div class="row justify-content-start g-3 my-3">
+        <section class="col-12 col-md-6 col-lg-3" v-for="b in blogs" :key="b">
+            <a :href="b.url"  style="text-decoration:none !important;">
+                <div class="p-3 shadow-sm bg-light rounded d-flex flex-column gap-3 pop">
+                    <div class="d-flex align-items-center gap-3"> 
+                        <img :src="b.thumbnail" width="80" height="80" :alt="b.title" class="object-fit-cover rounded-circle skeleton">
+                        <h6 class="text-primary">{{b.title}}</h6>
+                    </div>
+                    <p class="text-secondary text-fade-3 fs-small px-1 m-0" style="height: 60px;">{{b.description}}</p>
+                    <time class="p-1 fs-xsmall text-secondary mono m-0 fw-bold">{{utilities.timo(b.date)}} </time>
+                    
+                </div>
+            </a>
+        </section>
+        <a id="show-more" class="col-12 icon-link icon-link-hover fs-small link-underline-opacity-0 p-1 justify-content-center" :href="utilities.env('/blogs')">
+            <span class="text-fade text-center">show more</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+    </div>
     </section>
     `,
     props:['blogs','utilities','contact'],
