@@ -18,7 +18,7 @@ export default {
                     </div> -->
                 </div>
             </section>
-            <section class="col-12 col-lg-5 order-2 order-lg-1">
+            <section class="d-none d-lg-block col-12 col-lg-5 order-2 order-lg-1">
                 
                 <div class="d-flex justify-content-center">
                     <div class="ratio ratio-16x9">
