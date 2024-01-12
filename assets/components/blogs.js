@@ -39,7 +39,7 @@ export default {
             <a :href="b.url"  style="text-decoration:none !important;">
                 <div class="p-3 shadow-sm bg-light rounded d-flex flex-column gap-3 pop">
                     <div class="d-flex align-items-center gap-3"> 
-                        <img :src="b.thumbnail" width="80" height="80" :alt="b.title" class="object-fit-cover rounded-circle skeleton">
+                        <img :src="'https://lh3.googleusercontent.com/d/'+utilities.exId(b.thumbnail)" width="80" height="80" :alt="b.title" class="object-fit-cover rounded-circle skeleton">
                         <h6 class="text-primary">{{b.title}}</h6>
                     </div>
                     <p class="text-secondary text-fade-3 fs-small px-1 m-0" style="height: 60px;">{{b.description}}</p>
